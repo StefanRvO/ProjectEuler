@@ -795,8 +795,8 @@ for line in lines:
         if char in '0123456789':
             testinglines[i/10]+=char
     i+=1
-for line in testinglines:
-    print len(line)
+#for line in testinglines:
+#    print len(line)
 starttime=time.time()
 solvednumber=0
 summe=0
