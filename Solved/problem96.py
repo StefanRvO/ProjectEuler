@@ -62,7 +62,7 @@ def CheckMissplacements(Board,CellNum=-1, Solver = 0):
     for x in xrange(3):
         for y in xrange(3):
             if not CellNum==-1:
-                x=CellNum%3
+                x=(CellNum%9)/3
                 y=CellNum/27
             Blocknumbers=[]
             for i in xrange(3):

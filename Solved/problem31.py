@@ -1,5 +1,5 @@
 #!/usr/bin/python
-ways=[]
+count=0
 
 for i in xrange((200/1)+1):
     print i
@@ -23,7 +23,7 @@ for i in xrange((200/1)+1):
                                 break
                             for p in xrange(2):
                                 if i+2*j+5*k+10*l+20*m+50*n+100*o+p*200==200:
-                                    ways.append([i,j,k,l,m,n,o,p])
-print len(ways)
+                                    count+=1
+print count
                                     
                             
