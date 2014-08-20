@@ -54,4 +54,4 @@ counter=0
 for i in xrange(1000000):
     if GetChainLenght_nR(i)==60:
         counter+=1
-print counter
+print (counter)

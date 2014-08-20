@@ -46,3 +46,4 @@ for pos in possible:
     if contaionscommonwords(pos[0]):
         possible2.append(pos)
 print possible2
+print sum([ord(char) for char in possible2[0][0] ])

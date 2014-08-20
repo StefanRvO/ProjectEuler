@@ -11,7 +11,7 @@ def FindPowerSum(number,power):
 
 summe=0
 for testing in range(10,9**6*7):
-    if testing==FindPowerSum(testing,6):
+    if testing==FindPowerSum(testing,5):
         summe+=testing
         print testing
 

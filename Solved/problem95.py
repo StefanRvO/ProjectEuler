@@ -13,7 +13,8 @@ def getDivisors(number):    #returns a list of divisors
                 divisors.append(i)
                 divisors.append(number/i)
     return list(set(divisors))
-
+def GetDivisorSum(number):
+    return divisorsums[number]
 def getAmicableChain(number,recur=0):
     global tested
     if number not in tested:
@@ -28,7 +29,7 @@ def getAmicableChain(number,recur=0):
         chain.append(number)
         if number==1:
             return False
-        number=sum(getDivisors(number))
+        number=divisorsums[number]
         if number not in chain:
             if number not in tested:
                 tested.append(number)
@@ -39,6 +40,9 @@ def getAmicableChain(number,recur=0):
     else:
         return chain
 maxlenght=0
+divisorsums=[]
+for i in xrange(1000001):
+    divisorsums.append(sum(getDivisors(i)))
 for i in range(5,1000000):
     if i%10000==0:
         print i/1000000.
