@@ -21,7 +21,7 @@ int GetSquareSum(int n) {
     }
 int main() {
     int summe=0;
-    for (int i=1;i<10000000;i++) {
+    for (int i=1;i<10000000;i+=2) {
         if(GetChainEnd(i)==89) summe++;
         }
     cout << summe << endl;
